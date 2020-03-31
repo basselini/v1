@@ -1,0 +1,80 @@
+// Colors
+$night: #1E314F;
+$black: #444452;
+$grey: #f0f0f0;
+$blue: #749dd6;
+$orange:#FFCF96;
+
+
+// Fonts
+$font-stack: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
+
+// Media queries
+$fifteen-zoll: 1440px;
+$thirteen-zoll: 1280px;
+$desktop-width: 1024px;
+$little-desktop: 850px;
+$tablet-width: 768px;
+$small-tablet-width: 630px;
+$phablet-width: 550px;
+$mobile-width: 480px;
+$small-mobile-width: 360px;
+$tiny-mobile-width: 330px;
+
+@mixin transition {
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin thirteen {
+  @media screen and (max-width: #{$thirteen-zoll}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin little-desktop {
+  @media screen and (max-width: #{$little-desktop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin small-tablet {
+  @media screen and (max-width: #{$small-tablet-width}) {
+    @content;
+  }
+}
+
+@mixin phablet {
+  @media screen and (max-width: #{$phablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media screen and (max-width: #{$small-mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tiny-mobile {
+  @media screen and (max-width: #{$tiny-mobile-width}) {
+    @content;
+  }
+}

@@ -1,0 +1,168 @@
+/* === INTRO === */
+
+.intro {
+    padding: 120px 100px;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    max-width: 1440px;
+    margin: 0 auto;
+    @include small-tablet {
+      padding: 120px 70px;
+    }
+    @include phablet {
+      padding: 120px 50px;
+    }
+    @include mobile {
+      padding: 70px 50px;
+    }
+
+    &_hey, &_tagline {
+      font-size: 2.5rem;
+      @include desktop {
+        font-size: 2.25rem;
+      }
+      @include tablet {
+        font-size: 2rem;
+      }
+      @include phablet {
+        font-size: 1.5rem;
+      }
+      @include small-mobile {
+        font-size: 1.4rem;
+      }
+      @include tiny-mobile {
+        font-size: 1.3rem;
+      }
+      .emoji {
+        width: 40px;
+        height: 40px;
+        @include desktop {
+          width: 35px;
+          height: 35px
+        }
+        @include tablet {
+          width: 30px;
+          height: 30px;    
+        }
+        @include small-mobile {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    &_hey {
+      font-weight: 300;
+    
+      .goomba {
+        background-image: url(../img/emojis/Goomba-icon.png);
+        margin-left: 10px;
+        cursor: pointer;
+        &.animated {
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+          -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+        }
+        &.jump {
+          -webkit-animation-name: jump;
+          animation-name: jump;
+        }
+        @keyframes jump {
+          0% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+          10% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+          20% {
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+          }
+          30% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+          40% {
+            -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+          }
+          50% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+          60% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          } 
+          70% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+          80% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+          90% {
+            -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+          }
+          100% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+    &_tagline {
+      font-weight: 300;
+      max-width: 700px;
+    
+      .name {
+        font-weight: 700;
+      }
+  
+      .txt-rotate{
+        color:#749dd6;
+      }
+    }
+    &_highlight {
+      cursor: pointer;
+    }
+    &_contact{
+      font-size: 1.25rem;
+      font-weight: 400;
+      .chomp {
+      background-image: url(../img/emojis/Chain-Chomp-icon.png);
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+      vertical-align: text-bottom;
+      }
+      .link-1 {
+        font-weight: 400;
+        text-decoration: none;
+        display: inline-block;
+        padding: 3px 8px;
+        text-decoration: none;
+        box-shadow: inset 3px 0 0 0 #749dd6;
+        transition: .7s;
+        &:hover {
+          box-shadow: inset 310px 0 0 0 #749dd6;
+          color: #f0f0f0;
+        }
+      }
+      @include phablet {
+        font-size: 1rem;
+      }  
+    }
+} 

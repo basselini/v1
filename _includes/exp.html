@@ -1,0 +1,20 @@
+<section class="section experience" data-aos="fade-up">
+  <div class="section_title">Experience</div>
+  <div class="section_content">
+    <div class="jobs">
+      {% for job in site.data.experience %}
+      <div class="job">
+        <div class="time-place">
+          <div class="job_company">
+            <a href="{{job.url}}" target="_blank">{{job.company}}</a>
+          </div>
+          <div class="job_time">{{job.time}}</div>
+        </div>
+        <div class="job_position">{{job.position}}</div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <a href="" target="_blank" class="arrow-link" style="display: none">View My Resume</a>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+<section class="section skills" data-aos="fade-up">
+  <div class="section_title">Skills</div>
+  <div class="section_content">
+    <div class="skillz">
+      <div class="skillz_category">
+        <div class="skillz_category_label">Languages</div>
+        <ul>
+          {% for language in site.data.skills.languages %}
+          <li class="skillz_category_item">{{language.item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="skillz_category">
+        <div class="skillz_category_label">Frameworks</div>
+        <ul>
+          {% for framework in site.data.skills.frameworks %}
+          <li class="skillz_category_item">{{framework.item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="skillz_category">
+        <div class="skillz_category_label">Tools</div>
+        <ul>
+          {% for tool in site.data.skills.tools %}
+          <li class="skillz_category_item">{{tool.item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="skillz_category">
+        <div class="skillz_category_label">Design</div>
+        <ul>
+          {% for thing in site.data.skills.design %}
+          <li class="skillz_category_item">{{thing.item}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

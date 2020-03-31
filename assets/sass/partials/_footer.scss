@@ -1,0 +1,115 @@
+/* === FOOTER === */
+
+.footer {
+    padding: 50px 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    @include desktop {
+      padding: 50px;
+    }
+    @include small-tablet {
+      display: block;
+    }
+    @include mobile {
+      padding: 50px 30px;
+    }
+    &_copyright {
+      font-weight: 700;
+      width: 200px;
+      .emoji {
+        width: 30px;
+        height: 30px;
+        margin: 0 3px;
+        vertical-align: text-bottom;
+      }
+      .maker {
+        background-image: url(../img/emojis/mario-maker.png);
+      }
+      @include small-tablet {
+        width: auto;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      .top, .bottom {
+        @include small-tablet {
+          display: inline-block;
+        }
+        @include mobile {
+          display: block;
+        }
+      }
+    }
+    &_links {
+      a {
+        position: relative;
+        display: inline-block;
+        color: #749dd6 !important;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0 15px;
+        outline: 0;
+        @include desktop {
+          margin: 0 10px;
+        }
+        &:after {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background: #749dd6;
+          content: '';
+          opacity: 0;
+          -webkit-transition: height .3s,opacity .3s,-webkit-transform .3s;
+          transition: height .3s,opacity .3s,-webkit-transform .3s;
+          transition: height .3s,opacity .3s,transform .3s;
+          transition: height .3s,opacity .3s,transform .3s,-webkit-transform .3s;
+          -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+          @include little-desktop {
+            display: none;
+          }
+        }
+    
+        &:focus:after, &:hover:after {
+          height: 2px;
+          border-radius: 3px;
+          opacity: 1;
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+    
+        .text {
+          font-size: .9rem;
+          display: inline;
+          letter-spacing: 1px;
+          @include little-desktop {
+            display: none;
+          }
+        }
+        @include small-tablet {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+    
+        }
+    }
+  }
+  img {
+    display: none;
+    width: 22px;
+    @include little-desktop {
+      display: inline-block;
+    }
+  }
+}
