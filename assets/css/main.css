@@ -607,8 +607,8 @@ input:checked + .toggle {
   .intro_contact {
     font-size: 1.25rem;
     font-weight: 400; }
-    .intro_contact .chomp {
-      background-image: url(../img/emojis/Chain-Chomp-icon.png);
+    .intro_contact .toad {
+      background-image: url(../img/emojis/toad.png);
       width: 30px;
       height: 30px;
       margin: 0 10px;
