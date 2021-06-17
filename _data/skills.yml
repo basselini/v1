@@ -1,20 +1,17 @@
 languages:
+  - item: Java
   - item: JavaScript (ES6)
   - item: HTML
   - item: CSS/Sass
-  - item: Java
 
 frameworks:
   - item: Bootstrap
   - item: React
-  - item: styled-components
   - item: Jekyll
   - item: WordPress
 
 tools:
-  - item: Git & Github
-  - item: Chrome DevTools
-  - item: Gulp
+  - item: Git
 
 design:
   - item: Figma
