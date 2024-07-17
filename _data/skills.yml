@@ -1,8 +1,10 @@
-languages:
+languages + knowledge:
   - item: Java
+  - item: ETL/ELT
+  - item: Python
+  - item: R
   - item: JavaScript (ES6)
-  - item: HTML
-  - item: CSS/Sass
+  - item: HTML + CSS/Sass
 
 frameworks:
   - item: Bootstrap
@@ -11,8 +13,12 @@ frameworks:
   - item: WordPress
 
 tools:
+  - item: Talend Studio
+  - item: Microsoft Azure
   - item: Git
+  - item: Jira
 
-design:
+design + modelling:
   - item: Figma
-  - item: User Testing
+  - item: Balsamiq
+  - item: draw.io
