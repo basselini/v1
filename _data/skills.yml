@@ -1,4 +1,4 @@
-languages + knowledge:
+languages:
   - item: Java
   - item: ETL/ELT
   - item: Python
@@ -18,7 +18,7 @@ tools:
   - item: Git
   - item: Jira
 
-design + modelling:
+design:
   - item: Figma
   - item: Balsamiq
   - item: draw.io
